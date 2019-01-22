@@ -11,11 +11,11 @@ brew uninstall gnu-sed
 brew install gnu-sed --with-default-names
 echo 'export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.bash_profile 
 #reopen terminal
+```
 
 
 
-
-
+```sh
 composer create-project --prefer-dist laravel/laravel push
 docker run --name host-redis -p 6379:6379 -d redis 
 cd push 
