@@ -130,7 +130,7 @@ class CommandMessagePush extends Command
 
 
 
-ADD TO FILE ./bootstrap.js
+ADD TO FILE resources/js/bootstrap.js
 ```js
 //Begin laravel Echo
 import Echo from 'laravel-echo'
