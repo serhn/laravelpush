@@ -2,7 +2,7 @@
 Push service laravel without PUSHER
 
 for mac
-sh```
+```sh
 brew cask install docker
 brew install composer
 brew install npm
@@ -27,7 +27,7 @@ php artisan make:event EventMessagePush
 ```
 
 edit app/Events/EventMessagePush.php
-php```
+```php
 <?php
 
 namespace App\Events;
@@ -71,7 +71,7 @@ class EventMessagePush implements ShouldBroadcast
 
 
 
-sh```
+```sh
 php artisan make:command CommandMessagePush
 ```
 
@@ -131,7 +131,7 @@ class CommandMessagePush extends Command
 
 
 ADD TO FILE ./bootstrap.js
-js```
+```js
 //Begin laravel Echo
 import Echo from 'laravel-echo'
 
@@ -151,7 +151,7 @@ window.Echo.channel('channel-name')
 
 add to file resources/views/welcome.blade.php
 
-html```
+```html
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Scripts -->
@@ -159,7 +159,7 @@ html```
 
 ```
 
-sh```
+```sh
 npm i
 npm install --save laravel-echo
 npm install --save socket.io-client
@@ -178,7 +178,7 @@ php artisan serve
 
 open http://localhost:8000
 
-sh```
+```sh
 php artisan send:mes 1 "hi it is PUSH mess"
 ```
 OPEN WEB TOOLS CONSOLE 
